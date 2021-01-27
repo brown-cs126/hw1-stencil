@@ -141,7 +141,7 @@ assert_equal (1 + 2) 3
 
 (* Asserts that the exception specified in the first argument will
 be raised by running the second argument (a thunk) *)
-assert_raises Division_by_zero (fun -> 1 / 0)
+assert_raises Division_by_zero (fun () -> 1 / 0)
 ```
 
 Additionally, `assert_equal` takes an optional `printer` parameter that
