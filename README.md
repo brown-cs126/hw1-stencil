@@ -43,9 +43,12 @@ change any of them to `let rec` as you see fit.
 
 ### Stringifying expressions
 
-**Task:** To get some practice working with `s_exp`s, implement the
+**Task:** To get some practice working with the `s_exp` type, implement the
 `string_of_s_exp` function, which should produce the string representation of
-the expression it is given.
+the expression it is given. We have included some tests for this function; feel
+free to add more.
+
+-**Hint:** The `string_of_int` function converts an integer to a string.
 
 ### Bin
 
@@ -170,6 +173,6 @@ this homework by running, e.g.,
 ```shell
 # dune utop
 utop> open Hw1.Arith;;
-utop> string_of_s_exp "42";;
-Num 42
+utop> string_of_s_exp (Num -45);;
+"-45"
 ```
