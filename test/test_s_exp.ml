@@ -7,6 +7,7 @@ let tests =
          >:: fun _ ->
          assert_equal (parse "()") (Lst []) ~printer:show ;
          assert_equal (parse "42") (Num 42) ~printer:show ;
+         assert_equal (parse "-20") (Num (-20)) ~printer:show ;
          assert_equal (parse "a") (Sym "a") ~printer:show ;
          assert_equal (parse "(a b)") (Lst [Sym "a"; Sym "b"]) ~printer:show ;
          assert_equal ~printer:show (parse "(+ 3 (* 4 5))")
