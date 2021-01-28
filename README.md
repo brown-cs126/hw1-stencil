@@ -173,6 +173,6 @@ this homework by running, e.g.,
 ```shell
 # dune utop
 utop> open Hw1.Arith;;
-utop> string_of_s_exp (Num -45);;
+utop> string_of_s_exp (Num (-45));;
 "-45"
 ```
